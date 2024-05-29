@@ -41,7 +41,7 @@ void keyReleased() {
     decoder.decodeImage(frame);
     break;
   case 'o': //opens the link in the decoded data
-    if (!status.equals("Take a picture with the spacebar") && !status.equals("No QRcode image found") && !status.equals("Decoding image")) {
+    if (!status.equals("Take a picture with the spacebar") && !status.equals("No QRcode image found") && !status.equals("Decoding")) {
       link(status);
     }
     
