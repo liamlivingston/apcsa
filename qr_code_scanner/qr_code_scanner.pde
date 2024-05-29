@@ -3,12 +3,10 @@ import pqrcode.*;
 
 Capture video;
 Decoder decoder;
-int width = 320;
-int height = 240;
 String status = "Take a picture with the spacebar";
 
 void setup() {//sets up the decoder and video window (320x240px)
-  size(width, height);
+  size(320, 240);
   video = new Capture(this, width, height);
   decoder = new Decoder(this);
   video.start();
